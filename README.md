@@ -34,6 +34,14 @@ To build the application for deployment, run the following command:
 npm run build
 ```
 
+### Deploy - Github Pages
+
+To deploy to the Github Pages, update the `package.json` homepage and run the following command:
+
+```
+npm run deploy
+```
+
 ### Linting and Unit Tests
 
 The following commands can be added to the CI pipeline to ensure code quality is met.
