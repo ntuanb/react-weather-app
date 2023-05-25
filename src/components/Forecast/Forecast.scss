@@ -1,0 +1,11 @@
+:root {
+  --forecast-background-color: hsl(0, 0%, 96%);
+  --forecast-text-color: #222;
+  --forecast-primary-color: hsl(217, 71%, 53%);
+}
+
+.forecast {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}

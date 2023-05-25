@@ -1,0 +1,86 @@
+.forecast-day {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  background-color: var(--forecast-background-color);
+  color: var(--forecast-text-color);
+
+  @media screen and (min-width: 769px) {
+    flex-direction: row;
+  }
+
+  &__icon {
+    flex: 1 0 15%;
+    font-size: 2.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  &__summary {
+    flex: 1 0 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+
+    @media screen and (min-width: 769px) {
+      text-align: left;
+    }
+  }
+
+  &__summary-text {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+
+  &__summary-temperature {
+    font-size: 1.5rem;
+    font-weight: bold
+  }
+
+  &__summary-feels-like {
+    font-size: 0.75rem;
+    padding-left: 1rem;;
+  }
+
+  &__details {
+    flex: 1 0 50%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @media screen and (min-width: 769px) {
+      align-items: flex-end;
+    }
+  }
+
+  &__details-date {
+    font-weight: bold;
+  }
+
+  &__details-extra {
+    display: flex;
+    margin-top: 1rem;
+
+    @media screen and (min-width: 769px) {
+      margin-top: auto;
+    }
+
+    .wi {
+      padding-right: 1rem;
+    }
+  }
+
+  &__details-extra-item {
+    margin-left: 1rem;
+  }
+}
