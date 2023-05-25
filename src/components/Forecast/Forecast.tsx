@@ -8,7 +8,7 @@ function Forecast(props: ForecastType) {
   const { children } = props
 
   return (
-    <div className="forecast">
+    <div className="forecast" data-cy="forecast">
       {children}
     </div>
   );

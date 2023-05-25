@@ -42,7 +42,7 @@ To deploy to the Github Pages, update the `package.json` homepage and run the fo
 npm run deploy
 ```
 
-### Linting and Unit Tests
+### Linting, Unit and Integration Tests
 
 The following commands can be added to the CI pipeline to ensure code quality is met.
 
@@ -51,4 +51,5 @@ Run the following command to run the linting and unit tests:
 ```
 npm run lint
 npm run unit
+npm run integration
 ```
